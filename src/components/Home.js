@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import leftbottomcorner from '../images/leftbottomcorner.png';
-import logo from '../images/Logo.jpeg';
+import logo from '../images/BTR-Logo.png';
 import cartton from '../images/image1.jpg';
 import Lefttop_Corner from '../images/lefttopcorner.png';
 import bottomrightcorner from '../images/bottomrightcorner.png';
@@ -134,7 +134,7 @@ export class HomePage extends Component {
                         <div className="gc-left">
                             <h2>BIG TOWER GROUP OF COMPANIES</h2>
                             <div className="gc-quote">
-                                <span>LEADING FROM THE FRONT,<br />LEAVING A LEGACY BEHIND</span>
+                                <i>"LEADING FROM THE FRONT,LEAVING A LEGACY BEHIND"</i>
                             </div>
                             <p>
                                 The Big Tower Group comprises three companies within its fold, with the aim of catering to the construction industry under one roof.

@@ -1,5 +1,5 @@
 import React from 'react';
-import footlogo from '../images/footlogo.png';
+import footlogo from '../images/BTR-Logo.png';
 import {
     faHome, faCog, faSignInAlt, faInfoCircle, faPhoneSquare, faMapMarker,
     faPhone, faPrint, faEnvelope
@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="blurred-background"></div>
             <div className="footercontent-div">
                 <div className="footer-list section1 col-XS-24 col-SM-8 col-MD-13 LarScr-12">
-                    <img src={footlogo} alt="Company Logo in footer" />
+                    <img src={footlogo} style={{'width':'100px','height':'50px'}} alt="Company Logo in footer" />
                     <ul className="list-unstyled">
                         <li>
                             <span>A global leader in next-generation digital
@@ -31,7 +31,6 @@ export default function Footer() {
                         <ul className="list-unstyled">
                             <li><Home /><a href="/">Home</a></li>
                             <li><Settings /><a href="/Products">Products</a></li>
-                            <li><ArrowForward /><a href="/SignUp">SignUp</a></li>
                             <li><InfoOutlined /><a href="/About">About</a></li>
                             <li><PhoneIphone /><a href="/ContactUs">Contact Us</a></li>
                         </ul>
@@ -56,16 +55,16 @@ export default function Footer() {
                             <li className="d-flex">
                                 <span><LocationOn/></span>
                                 <span style={{ 'width': '227px' }}>
-                                    Appsure Technologies Private Limited AN Tower | Royal Nagar | Dharmapuri Tamilnadu | India - 636705
+                                    BigTower | Royal Nagar | Dharmapuri Tamilnadu | India - 636705
                                 </span>
                             </li>
                             <li>
                                 <span><Phone/></span>
-                                <span>+91 4342 231199</span>
+                                <span>+91 4342 8585</span>
                             </li> 
                             <li>
                                 <span><MailOutline/></span>
-                                <span>info@appsuretechnologies.com</span>
+                                <span>info@bigtower.com</span>
                             </li>
                         </ul>
                     </div>
