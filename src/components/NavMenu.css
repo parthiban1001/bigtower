@@ -1,0 +1,59 @@
+﻿a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+.try_now {
+    background-image: url('../images/image1.jpg'); /* Update the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; /* Adjust height as needed */
+}
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.myDiv {
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+    width: 50%;
+}
+
+.DivWidth {
+    width: 50%;
+} 
+ 
+a.navbar-brand {
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+    a.navbar-brand:hover {
+        background-color: #f5f5f5;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+.rhs_side li {
+    display: inline;
+    float: left;
+    list-style: none;
+    padding: 0 4px;
+}
+    .rhs_side li .mail_notify {
+        position: absolute;
+        right: 3px;
+        top: -3px;
+    }

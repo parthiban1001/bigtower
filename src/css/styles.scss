@@ -1,0 +1,196 @@
+﻿/*common stylesheet*/
+$PageTitle_color: #0094ff;
+
+html, body, .from_layout, .wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+}
+
+.content_div {
+    height: 100%;
+    flex-grow: 1;
+    overflow: auto;
+    background: #f2f4f3;
+}
+
+.text-material {
+    color: #696969;
+}
+
+.content_div {
+    padding: 0;
+    width: 100%;
+}
+
+.bg_dlgcard {
+    background-color: #f2f7f8;
+}
+
+.panel_card {
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 7px;
+    margin: 10px 0;
+    padding: 0px 0 20px;
+
+    .panel_heading {
+        font-size: 1.4rem;
+        padding: 15px 20px 5px;
+        color: #0885e8;
+    }
+
+    .panel_body {
+        padding: 0px 5px;
+    }
+}
+
+.Page_title {
+    color: $PageTitle_color;
+}
+
+.Login_page {
+    background: #e4eaf6;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    .login_box {
+        width: 820px;
+        display: flex;
+
+        .input-group {
+            margin: 1rem 0;
+            flex-flow: column;
+        }
+
+        .input-group h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #696969;
+        }
+
+        .input-group input, .input-group input:focus {
+            border-width: 1px;
+            border-style: solid;
+            border-color: transparent transparent #d2d2d2 transparent;
+            height: 40px;
+            outline: 0;
+        }
+
+        .input-group input:focus {
+            border-color: transparent transparent #1772e8 transparent;
+        }
+
+        .login_lhs {
+            width: 53%;
+            float: left;
+            padding: 4rem 2rem;
+            background-color: #fff;
+
+            .MuiFormControl-root {
+                color: #6b6b6b;
+                margin: 12px 0;
+                width: 100%;
+            }
+        }
+
+        .login_rhs {
+            width: 47%;
+            float: left;
+            color: #ffffff;
+            padding: 2rem 2rem;
+            position: relative;
+            background: #fff url(../images/lighthouse.svg) no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            justify-content: center;
+            z-index: 1;
+
+            &:before {
+                background-color: rgba(0, 123, 255, 0.53);
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            .brief_text {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
+
+.home_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    z-index: 1;
+
+    &:after {
+        content: "";
+        background: url(../images/Home.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top:15%;
+        z-index: -1;
+    }
+}
+
+
+
+.Signup_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        background: url(../images/signup.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 50%;
+        height: 65%;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 15%;
+        z-index: -1;
+    }
+}
+
+.container.user_detailpage {
+    max-width: 95%;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+    margin-top: 25px;
+    height: calc(100% - 50px);
+    overflow: auto;
+    background-color: #ffffff;
+}
