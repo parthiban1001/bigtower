@@ -133,10 +133,10 @@ export class Products extends Component {
                                     Please do not use the portal for emergency communications with your healthcare provider.
                                 </p>
                                 <center className="action_section" data-aos="zoom-in">
-                                    <a href="http://emrapp.appsuretechnologies.com:6338/EMRPatientPortal/index.html" target="_blank">
+                                    <a href="http://emrapp.Bigtowertechnologies.com:6338/EMRPatientPortal/index.html" target="_blank">
                                         <img src={Androidappimg} className="getimage" />
                                     </a>
-                                    <a href="https://portal.appsuretechnologies.com" target="_blank">
+                                    <a href="https://portal.Bigtowertechnologies.com" target="_blank">
                                         <Button variant="contained" startIcon={<Public />}>Visit Our Website</Button>
                                     </a> 
                                 </center>
@@ -146,7 +146,7 @@ export class Products extends Component {
                     <div className="choose_functions">
                         <div className="col-XS-24 col-SM-22 col-MD-42 LarScr-35 page_center">
                             <div className="col-XS-24 col-SM-12 col-MD-24 LarScr-20">
-                                <h1>Why Appsure?</h1>
+                                <h1>Why Bigtower?</h1>
                                 <p>
                                     Hospital Information system is a hospital software designed for small and mid-size hospitals and clinics.
                                    </p>

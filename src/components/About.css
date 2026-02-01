@@ -1,0 +1,156 @@
+/* Management Section */
+.management-section {
+    text-align: center;
+    padding: 40px 15px;
+    background-color: #f9f9f9;
+}
+
+.management-section .header h2 {
+    color: #009fe3;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.management-section .header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.management-section .header h1 span {
+    font-weight: 700;
+    color: #333;
+}
+
+.management-section .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.management-section .photo {
+    flex: 1 1 300px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.management-section .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.management-section .details {
+    flex: 2 1 400px;
+}
+
+.management-section .details h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #009fe3;
+}
+
+.management-section .details h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.management-section .about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.management-section .about p.highlight {
+    font-weight: 600;
+    color: #333;
+    border-left: 4px solid #009fe3;
+    padding-left: 15px;
+}
+
+
+/* Why Choose Us Section */
+.why-choose-us {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.why-choose-us h2 {
+    color: #009fe3;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.why-choose-us h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.why-choose-us h1 span {
+    font-weight: 700;
+    color: #333;
+}
+
+.why-choose-us .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.why-choose-us .feature {
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.why-choose-us .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us .feature-icon {
+    margin-bottom: 20px;
+}
+
+.why-choose-us .feature-icon img {
+    max-width: 60px;
+    height: auto;
+}
+
+.why-choose-us .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.why-choose-us .feature h3 span {
+    font-weight: 700;
+    color: #009fe3;
+}
+
+.why-choose-us .feature p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .management-section .content {
+        flex-direction: column;
+    }
+
+    .management-section .photo {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}

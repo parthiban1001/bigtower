@@ -3,7 +3,34 @@
     align-items: center;
     padding: 40px 0;
 }
-
+.scroll-images-section {
+    background: #f7f7f7;
+    padding: 30px 0;
+}
+.scroll-images-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 30px;
+    scroll-behavior: smooth;
+}
+.scroll-images-container img {
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0001;
+    transition: transform 0.3s;
+}
+.scroll-images-container img:hover {
+    transform: scale(1.07);
+}.auto-slider-image {
+    width: 100%;         /* or set a fixed width, e.g., 700px */
+    max-width: 700px;    /* limits the maximum width */
+    height: 700px;       /* set your desired height */
+    object-fit: cover;   /* keeps aspect ratio and fills the area */
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #0002;
+    transition: opacity 0.7s;
+}
 .about-us-img {
     width: 350px;
     height: auto;
@@ -61,7 +88,7 @@
 }
 
 .gc-left {
-    flex: 1.2;
+    flex: 2;
     background: rgba(255,255,255,0.97);
     color: #222;
     border-radius: 12px 0 0 12px;
@@ -232,9 +259,8 @@
 .vmv-bg {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: url('../images/desktop.png') center/cover no-repeat;
+    background: url('../images/home_back.webp') center/cover no-repeat;
     z-index: 1;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     opacity: 0.85;
 }
 

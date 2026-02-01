@@ -124,7 +124,7 @@ export class ContactUs extends Component {
                                     <li>
                                         <div> <LocationOn /></div>
                                         <div>
-                                            <p>Appsure Technologies Private Limited </p>
+                                            <p>Bigtower Technologies Private Limited </p>
                                             <p>AN Tower | Royal Nagar | Dharmapuri</p>
                                             <p>Tamilnadu | India - 636705 </p>
                                         </div>
@@ -135,7 +135,7 @@ export class ContactUs extends Component {
                                     </li>
                                     <li>
                                         <div> <Email /></div>
-                                        <div><p>info@appsuretechnologies.com </p> </div>
+                                        <div><p>info@Bigtowertechnologies.com </p> </div>
                                     </li>
                                 </ul>
                             </div>

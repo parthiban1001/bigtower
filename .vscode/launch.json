@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open new.html",
-            "file": "c:\\Users\\dell\\Desktop\\AppSure\\AppSureReact\\AppSureReact\\ClientApp\\src\\components\\new.html"
+            "file": "c:\\Users\\dell\\Desktop\\Bigtower\\BigtowerReact\\BigtowerReact\\ClientApp\\src\\components\\new.html"
         }
     ]
 }

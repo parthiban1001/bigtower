@@ -2,21 +2,52 @@ import React, { Component } from 'react';
 import leftbottomcorner from '../images/leftbottomcorner.png';
 import logo from '../images/BTR-Logo.png';
 import cartton from '../images/image1.jpg';
+import title from '../images/title.jpeg';
 import Lefttop_Corner from '../images/lefttopcorner.png';
 import bottomrightcorner from '../images/bottomrightcorner.png';
 import admission from '../images/SVG/admission.svg';
 import emr from '../images/SVG/emr.svg';
 import docs from '../images/SVG/docs.svg';
 import ourmission from '../images/SVG/ourmission.svg';
-import practice from '../images/SVG/practice.svg';
 import overview from '../images/SVG/overview.svg';
 import { FormatQuote } from '@material-ui/icons';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import './Home.css';
+const sliderImages = [
+    require('../images/image1.jpeg'),
+    require('../images/image2.jpeg'),
+    require('../images/image3.jpeg'),
+    require('../images/image4.jpeg'),
+    // Add more images as needed
+];
 
 
 export class HomePage extends Component {
+     constructor(props) {
+        super(props);
+        this.state = {
+            currentSlide: 0
+        };
+        this.sliderInterval = null;
+    }
+
+    componentDidMount() {
+        this.startSlider();
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.sliderInterval);
+    }
+
+    startSlider = () => {
+        this.sliderInterval = setInterval(() => {
+            this.setState(prev => ({
+                currentSlide: (prev.currentSlide + 1) % sliderImages.length
+            }));
+        }, 3000); // Change slide every 3 seconds
+    };
+
     componentWillMount() {
         AOS.init({
             once: true,
@@ -26,6 +57,30 @@ export class HomePage extends Component {
     render() {
         return (
             <div id="Overall" className="overallimg-div Homepage">
+                <style>{`
+                    .Homepage, .Homepage h1, .Homepage h2, .Homepage h3, .Homepage h4, .Homepage h5, .Homepage h6, .Homepage p, .Homepage span, .Homepage a, .Homepage li {
+                        font-family: Arial, sans-serif !important;
+                    }
+                `}</style>
+             
+                {/* <section className="auto-slider-section">
+                   <div className="auto-slider-container">
+                        <img
+                            src={sliderImages[this.state.currentSlide]}
+                            alt={`Project ${this.state.currentSlide + 1}`}
+                            className="auto-slider-image"
+                        />
+                        <div className="slider-dots">
+                            {sliderImages.map((_, idx) => (
+                                <span
+                                    key={idx}
+                                    className={`dot${this.state.currentSlide === idx ? ' active' : ''}`}
+                                    onClick={() => this.setState({ currentSlide: idx })}
+                                ></span>
+                            ))}
+                        </div>
+                    </div>
+                </section> */}
                 <section className="try_now">
                     <div >
                         <div id="logoContent" className="pull-left logo-content">
@@ -40,7 +95,7 @@ export class HomePage extends Component {
                 </section>
                 <section className="about_us">
                     <div className="about-us-content">
-                        <img src={cartton} alt="About Us" className="about-us-img" />
+                        <img src={cartton} alt="About Us" className="about-us-img" style={{ boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)' }} />
                         <div className="about-us-text">
                             <h2>ABOUT US</h2>
                             <h3>
@@ -88,7 +143,16 @@ export class HomePage extends Component {
                         </div>
                     </div>
                 </section>
-                <section className="our-strength">
+                <section
+                    className="our-strength"
+                    style={{
+                        backgroundImage: `url(${require('../images/bckground2.jpg')})`, // Replace with your image path
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        position: 'relative' // Good for overlaying content if needed
+                    }}
+                >
                     <div className="strength-header">
                         <img src={require('../images/lefttopcorner.png')} alt="" className="strength-corner" />
                         <h2>OUR STRENGTH</h2>
@@ -134,21 +198,13 @@ export class HomePage extends Component {
                         <div className="gc-left">
                             <h2>BIG TOWER GROUP OF COMPANIES</h2>
                             <div className="gc-quote">
-                                <i>"LEADING FROM THE FRONT,LEAVING A LEGACY BEHIND"</i>
+                                <i>"Leading From The Front,leaving A Legacy Behind"</i>
                             </div>
                             <p>
                                 The Big Tower Group comprises three companies within its fold, with the aim of catering to the construction industry under one roof.
                             </p>
                         </div>
                         <div className="gc-right">
-                            <div className="gc-card">
-                                <img src={require('../images/companylogo.jpeg')} alt="Tesla Logo" className="gc-logo" />
-                                <h4>Tesla Engineering & Constructions Pte Ltd</h4>
-                                <h3>Fire, ACMV & ELV Systems</h3>
-                                <p style={{ 'textAlign': 'justify' }}>
-                                    Tesla brings a gamut of engineering services, right from design to maintenance, to be a one-stop-solutions provider for a diverse clientele.
-                                </p>
-                            </div>
                             <div className="gc-card">
                                 <img src={require('../images/companylogo.jpeg')} alt="Scaffold Logo" className="gc-logo" />
                                 <h4>SR Scaffold Engineering Pte Ltd</h4>

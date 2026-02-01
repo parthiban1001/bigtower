@@ -4,7 +4,7 @@
     word-break: break-all;
 }
 .try_now {
-    background-image: url('../images/image1.jpg'); /* Update the path as needed */
+    background-image: url('../images/title.jpeg'); /* Update the path as needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
